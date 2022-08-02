@@ -1,0 +1,81 @@
+{
+  "clarityHubUrl": ".clarityhub.app",
+  "development": {
+    "port": "3000",
+    "secret": "jwt-secret",
+    "key": "jwt-secret.pem",
+    "defaultIntegrations": [
+      "65f3c689-5c8f-4ac3-8e82-ea56871e327b",
+      "dc7cd7ec-335d-4375-8b78-96984ca90d9e"
+    ],
+    "database": {
+      "username": "postgres",
+      "password": "postgres",
+      "database": "clairvoyance_auth_development",
+      "host": "postgres",
+      "dialect": "postgres"
+    },
+    "pubsub": {
+      "host": "rabbitmq",
+      "username": "claire",
+      "password": "claire",
+      "port": "5672"
+    },
+    "redis": {
+      "host": "redis",
+      "port": "6379"
+    }
+  },
+  "test": {
+    "port": "3001",
+    "secret": "jwt-secret",
+    "key": "jwt-secret.pem",
+    "defaultIntegrations": [
+      "65f3c689-5c8f-4ac3-8e82-ea56871e327b",
+      "dc7cd7ec-335d-4375-8b78-96984ca90d9e"
+    ],
+    "database": {
+      "username": "postgres",
+      "password": "postgres",
+      "database": "clairvoyance_auth_test",
+      "host": "postgres",
+      "dialect": "postgres"
+    },
+    "pubsub": {
+      "host": "rabbitmq",
+      "username": "claire",
+      "password": "claire",
+      "port": "5672"
+    },
+    "redis": {
+      "host": "redis",
+      "port": "6379"
+    }
+  },
+  "production": {
+    "port": "3000",
+    "secret": "jwt-secret",
+    "key": "jwt-secret.pem",
+    "defaultIntegrations": [
+      "65f3c689-5c8f-4ac3-8e82-ea56871e327b",
+      "dc7cd7ec-335d-4375-8b78-96984ca90d9e"
+    ],
+    "database": {
+      "username": "root",
+      "password": "root",
+      "database": "clairvoyance_auth_production",
+      "host": "127.0.0.1",
+      "dialect": "postgres"
+    },
+    "pubsub": {
+      "host": "127.0.0.1",
+      "username": "claire",
+      "password": "claire",
+      "port": "5672"
+    },
+    "redis": {
+      "host": "redis",
+      "port": "6380"
+    }
+  }
+}
